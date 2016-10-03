@@ -1,4 +1,9 @@
 language: java
 
-before_deploy:
-  - . ./scripts/deploy.sh
+deploy:
+  - provider: script
+    script: ./scripts/deploy.sh
+    on:
+      branch: master
+    skip_cleanup: true
+    
