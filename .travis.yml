@@ -1,5 +1,4 @@
 language: java
 
-deploy:
-  provider: script
-  script: scripts/deploy.sh
+before_deploy:
+  - . ./scripts/deploy.sh
