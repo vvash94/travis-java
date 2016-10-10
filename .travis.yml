@@ -1,10 +1,10 @@
 language: java
 sudo: required
 before_deploy:
-- chmod 777 ./scripts/deploy.sh
+- chmod 777 ./encrypts/deploy.sh
 deploy:
 - provider: script
-  script: ./scripts/deploy.sh
+  script: ./encrypts/deploy.sh
   on:
     branch: master
   skip_cleanup: true
