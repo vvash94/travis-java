@@ -1,5 +1,7 @@
 language: java
 
+sudo: required
+
 before_deploy:
   - chmod 777 ./scripts/deploy.sh
 
