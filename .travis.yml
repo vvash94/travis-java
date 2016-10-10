@@ -11,5 +11,5 @@ deploy:
 before_install:
 - openssl aes-256-cbc -K $encrypted_55d6e7f5ad09_key -iv $encrypted_55d6e7f5ad09_iv
   -in encrypts.tar.gz.enc -out encrypts.tar.gz -d
-- tar -xzvf encrypts.tar.gz 
+- tar -xzvf encrypts.tar.gz
 - chmod 400 encrypts/key.pem
